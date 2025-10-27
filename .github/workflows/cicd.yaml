@@ -69,7 +69,7 @@ jobs:
       - name: run tests
         run: go test   
       - name: uploading artifact 
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: ${{ github.event_name }}-${{ github.run_id }}-${{ github.run_attempt }}-golang_app
           path: golang_app/app
