@@ -63,7 +63,7 @@ jobs:
       - name: building 
         run: go build
       - name: run linting 
-        uses: golangci/golangci-lint-action@v3
+        uses: golangci/golangci-lint-action@v9
         with:
           working-directory: golang_app
       - name: run tests
