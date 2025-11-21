@@ -31,7 +31,7 @@ jobs:
           echo " gocache = $(go env GOCACHE)" >> $GITHUB_OUTPUT
           cat "${GITHUB_OUTPUT}"
       - name: clone 
-        uses: actions/checkout@v3.1.0
+        uses: actions/checkout@v6
       - name: debug
         env:
           CONTEXT_ITEM: ${{ toJson(steps) }}
