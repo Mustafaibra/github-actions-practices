@@ -39,7 +39,7 @@ jobs:
       - name: Run Tests
         run: go test
       - name: Store Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: golang_app
           path: golang_app/app
